@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentallisense 🧠</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen flex-col pt-4">
+  <h1 class="text-gray-950 font-bold text-4xl mb-4">Mentallisense 🧠</h1>
+  <div class="bg-white w-[90%] md:w-full max-w-lg rounded-lg shadow-md p-4">
+    <!-- Chat Container -->
+    <div id="chatContainer" class="flex flex-col space-y-4 h-[500px] overflow-y-auto p-2">
+      <% if (messages!=null && messages.length) { %>
+        <% messages.forEach(message => { %>
+          <div class="flex <%= message.isUser ? 'justify-end' : 'justify-start' %>">
+            <div class="p-3 rounded-lg max-w-xs <%= message.isUser ? 'bg-purple-600 text-white' : 'bg-gray-200 text-gray-800' %>">
+              <%= message.text %>
+            </div>
+          </div>
+        <% }) %>
+      <% } %>
+    </div>
+
+    <!-- Input Area -->
+    <form id="chatForm" class="mt-4 flex space-x-2" action="/chat" method="POST">
+      <textarea
+        name="userInput"
+        rows="1"
+        placeholder="Type your message..."
+        class="flex-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-800 resize-none"
+        required
+      ></textarea>
+      <button
+        type="submit"
+        class="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900 transition"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</body>
+</html>
