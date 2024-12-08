@@ -2,14 +2,6 @@
 
 **Mentallisense** is built using Node.js, Express.js, and integrates with Hugging Face's inference API to provide empathetic mental health support. It allows users to interact with an AI-driven chatbot capable of recognizing emotional states and responding accordingly.
 
-## 📌 Table of Contents
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Setup Instructions](#setup-instructions)
-- [Usage](#usage)
-- [Drawbacks & Limitations](#drawbacks--limitations)
-- [Future Improvements](#future-improvements)
-
 
 ## ✨ Features
 The Mentallisense chatbot comes with the following features:
