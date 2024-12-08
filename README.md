@@ -69,14 +69,6 @@ Follow the steps below to run the Mentallisense chatbot locally:
 5. **Open the App**
    - Navigate to `http://localhost:3000/` in your browser.
 
----
-
-## 🖥️ Usage
-
-1. After starting the server, navigate to [http://localhost:3000/](http://localhost:3000/).
-2. Interact with the chatbot by typing your messages into the text input and sending.
-3. Observe how Mentallisense dynamically adapts its responses based on user emotions and context.
-
 
 ## ❌ Drawbacks & Limitations
 1. **Emotion Detection is Contextual:**  
